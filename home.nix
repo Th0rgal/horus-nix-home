@@ -3,8 +3,7 @@
 {
   nixpkgs.config.allowUnfree = true;
 
-  home.packages = with pkgs; [
-    
+  home.packages = with pkgs; [    
     gotop htop neofetch zip unzip xorg.xev scrot 
     aria2 imagemagick feh (import ./alacritty-master.nix) # Till they fix the background_opacity bug
     vscodium typora
