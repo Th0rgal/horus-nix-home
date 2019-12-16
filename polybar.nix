@@ -349,9 +349,9 @@ in
         menu-0-0 = " Suspend";
         menu-0-0-exec = "systemctl suspend";
         menu-0-1 = " Reboot";
-        menu-0-1-exec = "shutdown -r now";
+        menu-0-1-exec = "systemctl reboot";
         menu-0-2 = " Shutdown";
-        menu-0-2-exec = "shutdown now";
+        menu-0-2-exec = "systemctl poweroff";
       };
 
       #"module/wireless-network" = {
