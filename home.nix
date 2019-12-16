@@ -17,7 +17,7 @@ in
       aria2 imagemagick feh (import ./alacritty-master.nix) # Till they fix the background_opacity bug
       vscodium typora
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
-      nerdfonts powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
+      powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
       idea.idea-ultimate vlc
     ];
 
