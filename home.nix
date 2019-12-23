@@ -8,7 +8,7 @@ let
     pygame
     pillow
     requests
-  ]; 
+  ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
   {
@@ -21,7 +21,7 @@ in
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
       powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
       idea.idea-ultimate vlc
-      bastet
+      bastet multimc tigervnc
     ];
 
     programs = {
