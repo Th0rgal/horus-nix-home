@@ -12,6 +12,7 @@ let
   python-with-my-packages = python3.withPackages my-python-packages;
 in
   {
+    imports = [ ./i3.nix ./polybar.nix ./rofi.nix ];
     nixpkgs.config.allowUnfree = true;
 
     home.packages = with pkgs; [    
@@ -30,7 +31,6 @@ in
       firefox.enable = true;
 
       # alacritty = import ./alacritty.nix { inherit pkgs; };
-      rofi = import ./rofi.nix { inherit pkgs; };
 
       git = {
         enable = true;
@@ -38,11 +38,8 @@ in
         userEmail = "thomas.marchand" + "@" + "tuta.io";
       };
     };
-      
-    xsession.windowManager.i3 = import ./i3.nix { inherit pkgs lib; };
     
     services = {
       compton = import ./compton.nix {};
-      polybar = import ./polybar.nix { inherit pkgs; };
     };
   }
