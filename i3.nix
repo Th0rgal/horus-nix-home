@@ -32,6 +32,12 @@
       
       startup = [
         {
+          command = "systemctl --user restart polybar.service";
+          always = true;
+          notification = false;
+        }
+
+        {
           command = "${pkgs.bash}/bin/bash ~/screens.sh"; # TODO: Check if exists
           always = true;
         }

@@ -15,6 +15,8 @@ in
     imports = [ ./i3.nix ./polybar.nix ./rofi.nix ];
     nixpkgs.config.allowUnfree = true;
 
+    home.keyboard.layout = "fr";
+
     home.packages = with pkgs; [    
       gotop htop neofetch zip unzip xorg.xev scrot ctags 
       aria2 imagemagick feh (import ./alacritty-master.nix) # Till they fix the background_opacity bug
@@ -42,4 +44,6 @@ in
     services = {
       compton = import ./compton.nix {};
     };
+
+	xsession.enable = true;
   }
