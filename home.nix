@@ -15,9 +15,9 @@ in
     nixpkgs.config.allowUnfree = true;
 
     home.packages = with pkgs; [    
-      gotop htop neofetch zip unzip xorg.xev scrot 
+      gotop htop neofetch zip unzip xorg.xev scrot ctags 
       aria2 imagemagick feh (import ./alacritty-master.nix) # Till they fix the background_opacity bug
-      vscodium typora
+      vscodium typora discord
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
       powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
       idea.idea-ultimate vlc
