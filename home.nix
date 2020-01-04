@@ -18,11 +18,18 @@ in
     home.keyboard.layout = "fr";
 
     home.packages = with pkgs; [    
+      # TERMINAL
+      (import ./alacritty-master.nix) # Till they fix the background_opacity bug
       gotop htop neofetch zip unrar unzip xorg.xev scrot tree
-      aria2 imagemagick feh (import ./alacritty-master.nix) # Till they fix the background_opacity bug
-      idea.idea-ultimate vscodium (pkgs.callPackage ./termius.nix { }) discord vlc typora (pkgs.callPackage ./wpsoffice.nix { })
+      aria2 imagemagick feh
+      # DEVELOPMENT
+      idea.idea-ultimate vscodium (pkgs.callPackage ./termius.nix { })
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
+      # OFFICE
+      discord vlc spotify typora (pkgs.callPackage ./wpsoffice.nix { })
+      # FONTS
       powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
+      # GAMES
       bastet multimc tigervnc
     ];
 
