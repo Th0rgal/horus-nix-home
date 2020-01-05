@@ -20,7 +20,7 @@ in
     home.packages = with pkgs; [    
       # TERMINAL
       (import ./alacritty-master.nix) # Till they fix the background_opacity bug
-      gotop htop neofetch zip unrar unzip xorg.xev scrot tree
+      gotop htop neofetch cava zip unrar unzip xorg.xev scrot tree
       aria2 imagemagick feh
       # DEVELOPMENT
       idea.idea-ultimate vscodium (pkgs.callPackage ./termius.nix { })
