@@ -160,7 +160,7 @@ in
         
         "module/battery" = {
           type = "internal/battery";
-          full-at = 99;
+          full-at = 101; # to disable it
           battery = "BAT0"; # TODO: Better way to fill this
           adapter = "AC0";
 
@@ -176,7 +176,7 @@ in
           animation-charging-2 = "";
           animation-charging-3 = "";
           animation-charging-4 = "";
-          animation-charging-framerate = 750;
+          animation-charging-framerate = 500;
 
           format-discharging = "<ramp-capacity> <label-discharging>";
           format-discharging-padding = 1;
