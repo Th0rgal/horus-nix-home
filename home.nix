@@ -52,5 +52,5 @@ in
       compton = import ./compton.nix {};
     };
 
-	xsession.enable = true;
+    xsession.enable = true;
   }
