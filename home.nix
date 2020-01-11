@@ -8,6 +8,7 @@ let
     pygame
     pillow
     requests
+    (callPackage ./discordpy.nix { })
   ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
@@ -23,10 +24,10 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev scrot tree
       aria2 imagemagick feh
       # DEVELOPMENT
-      idea.idea-ultimate vscodium (pkgs.callPackage ./termius.nix { })
+      idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
       # OFFICE
-      discord vlc spotify typora (pkgs.callPackage ./wpsoffice.nix { })
+      discord vlc spotify typora (callPackage ./wpsoffice.nix { })
       # FONTS
       powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
       # GAMES
