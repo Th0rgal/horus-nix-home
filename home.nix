@@ -27,7 +27,7 @@ in
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
       # OFFICE
-      discord vlc spotify typora (callPackage ./wpsoffice.nix { })
+      xfce4-14.thunar discord vlc spotify typora (callPackage ./wpsoffice.nix { })
       # FONTS
       powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
       # GAMES
