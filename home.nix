@@ -3,11 +3,19 @@
 with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
+    #server
     aiohttp
-    pywal
+    aiohttp-jinja2
+    #isn
     pygame
     pillow
-    requests
+    #ntru
+    sympy
+    numpy
+    docopt
+    #others
+    faker
+    pywal
     (callPackage ./discordpy.nix { })
   ];
   python-with-my-packages = python3.withPackages my-python-packages;
@@ -27,9 +35,7 @@ in
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
       # OFFICE
-      xfce4-14.thunar discord vlc spotify typora (callPackage ./wpsoffice.nix { })
-      # FONTS
-      powerline-fonts roboto siji (import ./termsyn.nix) source-code-pro dejavu_fonts noto-fonts-emoji
+      xfce4-14.thunar discord vlc spotify typora tor-browser-bundle-bin (callPackage ./wpsoffice.nix { })
       # GAMES
       bastet multimc tigervnc
     ];
