@@ -14,6 +14,9 @@ let
     numpy
     docopt
     #others
+    pip
+    wheel
+    setuptools
     faker
     pywal
     (callPackage ./discordpy.nix { })
