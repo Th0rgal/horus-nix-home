@@ -36,9 +36,9 @@ in
       aria2 imagemagick feh
       # DEVELOPMENT
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
-      python-with-my-packages zulu8 rustup gcc m4 gnumake binutils
+      python-with-my-packages zulu8 gradle rustup gcc m4 gnumake binutils
       # OFFICE
-      xfce4-14.thunar discord vlc spotify typora tor-browser-bundle-bin (callPackage ./wpsoffice.nix { })
+      xfce4-14.thunar discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
       # GAMES
       bastet multimc tigervnc
     ];
