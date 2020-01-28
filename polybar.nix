@@ -166,6 +166,11 @@ in
 
           poll-interval = 2;
           
+          label-full = " 100%";
+          format-full-padding = 1;
+          format-full-foreground = secondary;
+          format-full-background = primary;
+
           format-charging = " <animation-charging> <label-charging>";
           format-charging-padding = 1;
           format-charging-foreground = secondary;
