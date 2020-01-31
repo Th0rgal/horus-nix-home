@@ -40,7 +40,7 @@ in
       # OFFICE
       xfce4-14.thunar discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
       # GAMES
-      bastet multimc tigervnc
+      bastet multimc minecraft tigervnc
     ];
 
     programs = {
