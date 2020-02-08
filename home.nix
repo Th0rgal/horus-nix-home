@@ -32,13 +32,13 @@ in
     home.packages = with pkgs; [    
       # TERMINAL
       (import ./alacritty-master.nix) # Till they fix the background_opacity bug
-      gotop htop neofetch cava zip unrar unzip xorg.xev scrot tree gnupg
+      gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh
       # DEVELOPMENT
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages zulu8 gradle rustup gcc m4 gnumake binutils
       # OFFICE
-      xfce4-14.thunar discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
+      libreoffice discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
       # GAMES
       bastet multimc minecraft tigervnc
     ];
