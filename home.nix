@@ -13,6 +13,8 @@ let
     sympy
     numpy
     docopt
+    #database
+    psycopg2
     #others
     pip
     wheel
