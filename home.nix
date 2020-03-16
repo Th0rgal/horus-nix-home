@@ -42,7 +42,7 @@ in
       # OFFICE
       libreoffice discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
       # GAMES
-      bastet multimc minecraft tigervnc
+      bastet multimc tigervnc
     ];
 
     programs = {
