@@ -26,18 +26,18 @@ let
   python-with-my-packages = python3.withPackages my-python-packages;
 in
   {
-    imports = [ ./i3.nix ./polybar.nix ./rofi.nix ];
+    imports = [ ./i3.nix ./polybar.nix ./rofi.nix ./alacritty.nix ];
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
 
     home.packages = with pkgs; [    
       # TERMINAL
-      (import ./alacritty-master.nix) # Till they fix the background_opacity bug
+      #alacritty # Till they fix the background_opacity bug
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh
       # DEVELOPMENT
-      idea.idea-ultimate vscodium (callPackage ./termius.nix { })
+      idea.idea-ultimate vscodium #(callPackage ./termius.nix { })
       python-with-my-packages zulu8 gradle rustup gcc m4 gnumake binutils
       # OFFICE
       libreoffice discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
