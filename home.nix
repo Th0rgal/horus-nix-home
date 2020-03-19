@@ -39,7 +39,9 @@ in
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages zulu8 gradle rustup gcc m4 gnumake binutils
       # OFFICE
-      libreoffice discord vlc spotify typora tor-browser-bundle-bin gimp (callPackage ./wpsoffice.nix { })
+      texlive.combined.scheme-medium typora wpsoffice
+      # DEFAULT
+      discord vlc spotify gimp tor-browser-bundle-bin
       # GAMES
       bastet multimc tigervnc
     ];

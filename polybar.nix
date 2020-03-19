@@ -234,7 +234,7 @@ in
 
           ws-icon-0 = "1;";
           ws-icon-1 = "2;";
-          ws-icon-2 = "3;";
+          ws-icon-2 = "3;﬏";
           ws-icon-3 = "4;ﭮ";
           ws-icon-4 = "5;";
           ws-icon-5 = "6;";
