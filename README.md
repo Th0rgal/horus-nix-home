@@ -2,11 +2,13 @@
 
 ![nixos_logo](https://openlab-augsburg.de/wp-content/uploads/2016/06/nixos-hex.svg_.small_.png)
 
-This is the home-manager configuration I'm using on my laptop which runs Nixos 19.09. I'm only using 19.09 nixos and home-manager channels, so you don't need unstable in order to use these files.
+This is the home-manager configuration I'm using on my laptop which runs Nixos 20.03. I'm only using 20.03 nixos and home-manager channels, so you don't need unstable in order to use these files.
 
 ## Screenshots
 
-![screenshot_1](https://zupimages.net/up/20/01/g8x7.png)
+![screenshot_1](https://i.imgur.com/6ZJ6lA6.png)
+![screenshot_1](https://i.imgur.com/2M9GTwd.png)
+![screenshot_1](https://i.imgur.com/rulfs5k.png)
 
 ## How to use
 
