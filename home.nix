@@ -37,7 +37,7 @@ in
       aria2 imagemagick feh
       # DEVELOPMENT
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
-      python-with-my-packages zulu8 gradle rustup gcc m4 gnumake binutils
+      python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
       # OFFICE
       texlive.combined.scheme-medium typora wpsoffice
       # DEFAULT
