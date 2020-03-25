@@ -4,9 +4,9 @@ This is the home-manager configuration I'm using on my laptop which runs Nixos 2
 
 ## Screenshots
 
-![screenshot_1](https://i.imgur.com/6ZJ6lA6.png)
-![screenshot_1](https://i.imgur.com/2M9GTwd.png)
-![screenshot_1](https://i.imgur.com/rulfs5k.png)
+![screenshot_1](https://i.imgur.com/7UZeBis.png)
+![screenshot_1](https://i.imgur.com/PhOZTyA.png)
+![screenshot_1](https://i.imgur.com/m69vQ1Z.png)
 
 ## How to use
 
