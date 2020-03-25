@@ -30,7 +30,6 @@ in
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
-
     home.packages = with pkgs; [    
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg

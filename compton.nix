@@ -1,9 +1,11 @@
+# credits: @LightDiscord who helped me to update to picom
 { pkgs, ... }:
 
 { 
   services.picom = {
     enable = true;
-    package = import ./compton-tryone.nix;
+    package = pkgs.callPackage ./compton-unstable.nix { };
+    experimentalBackends = true;
     
     blur = true;
     blurExclude = [ "window_type = 'dock'" "window_type = 'desktop'" ];
@@ -29,7 +31,7 @@
       shadow-radius = 7;
       clear-shadow = true;
       frame-opacity = 0.7;
-      blur-method = "kawase";
+      blur-method = "dual_kawase";
       blur-strength = 8;
       alpha-step = 0.06;
       detect-client-opacity = true;
@@ -38,17 +40,7 @@
       detect-transient = true;
       mark-wmwin-focused = true;
       mark-ovredir-focused = true;
-      
-      wintypes :
-      {
-        tooltip :
-        {
-          fade = true;
-          shadow = false;
-          opacity = 0.75;
-          focus = true;
-        };
-      };
+
     '';
   };
 }
