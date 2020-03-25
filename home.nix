@@ -26,7 +26,7 @@ let
   python-with-my-packages = python3.withPackages my-python-packages;
 in
   {
-    imports = [ ./i3.nix ./polybar.nix ./rofi.nix ./alacritty.nix ];
+    imports = [ ./i3.nix ./polybar.nix ./rofi.nix ./alacritty.nix ./compton.nix ];
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
@@ -55,10 +55,6 @@ in
         userName = "Thomas Marchand";
         userEmail = "thomas.marchand" + "@" + "tuta.io";
       };
-    };
-    
-    services = {
-      compton = import ./compton.nix {};
     };
 
     xsession.enable = true;
