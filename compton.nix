@@ -23,7 +23,7 @@
     menuOpacity = "0.8";
     
     backend = "glx";
-    vSync = "opengl";
+    vSync = true;
 
     extraOptions = ''
       shadow-radius = 7;
