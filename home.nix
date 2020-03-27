@@ -30,13 +30,15 @@ in
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
-    home.packages = with pkgs; [    
+    home.packages = with pkgs; [
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh
       # DEVELOPMENT
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
+      # BLOCKCHAIN
+      (callPackage ./ledger-live.nix { })
       # OFFICE
       texlive.combined.scheme-medium typora wpsoffice
       # DEFAULT
