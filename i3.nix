@@ -25,8 +25,7 @@
         "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
         "${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -modi drun -show drun";
         "${modifier}+Shift+d" = "exec ${pkgs.rofi}/bin/rofi -show window";
-        "${modifier}+b" = "exec ${pkgs.firefox}/bin/firefox";
-
+        "${modifier}+b" = "exec ${pkgs.brave}/bin/brave";
         "${modifier}+Shift+x" = "exec systemctl suspend";
       };
       

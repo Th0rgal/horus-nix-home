@@ -42,7 +42,7 @@ in
       # OFFICE
       texlive.combined.scheme-medium typora wpsoffice
       # DEFAULT
-      discord vlc spotify gimp tor-browser-bundle-bin
+      brave discord vlc spotify gimp tor-browser-bundle-bin
       # GAMES
       bastet multimc tigervnc
     ];
@@ -50,7 +50,6 @@ in
     programs = {
       home-manager.enable = true;
       command-not-found.enable = true;
-      firefox.enable = true;
       git = {
         enable = true;
         userName = "Thomas Marchand";
