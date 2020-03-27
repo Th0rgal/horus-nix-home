@@ -233,13 +233,13 @@ in
           format-background = tertiary;
 
           ws-icon-0 = "1;";
-          ws-icon-1 = "2;";
+          ws-icon-1 = "2;";
           ws-icon-2 = "3;﬏";
           ws-icon-3 = "4;ﭮ";
-          ws-icon-4 = "5;";
-          ws-icon-5 = "6;";
-          ws-icon-6 = "7;";
-          ws-icon-7 = "8;";
+          ws-icon-4 = "5;";
+          ws-icon-5 = "6;";
+          ws-icon-6 = "7;";
+          ws-icon-7 = "8;";
           ws-icon-8 = "9;";
           ws-icon-9 = "10;";
 
