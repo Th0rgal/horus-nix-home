@@ -14,8 +14,8 @@ stdenv.mkDerivation rec {
   version = "5.6.1";
 
   src = fetchurl {
-    url = "https://deb.termius.com/pool/main/t/termius-app/termius-app_${version}_amd64.deb";
-    sha256 = "1b67163b8e4b71a5e9087acc0a70e4ed0a6147f1846ac755e24e6c529b477d92";
+    url = "https://www.termius.com/download/linux/Termius.deb";
+    sha256 = "0vgrkb4f9d47vr8dgl6rwjq0q5slxzhwlvrnafdjnxcx8vhy2g54";
   };
 
   desktopItem = makeDesktopItem {
