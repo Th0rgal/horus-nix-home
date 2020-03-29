@@ -14,7 +14,7 @@
       };
 
       font = {
-        normal.family = "FuraCode Nerd Font";
+        normal.family = "JetBrains Mono Nerd Font";
         size = 8.0;
       };
 
