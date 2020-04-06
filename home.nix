@@ -42,7 +42,7 @@ in
       # OFFICE
       texlive.combined.scheme-medium typora wpsoffice
       # DEFAULT
-      brave discord vlc spotify gimp
+      brave discord vlc spotify gimp blueman
       # GAMES
       bastet multimc tigervnc
     ];
