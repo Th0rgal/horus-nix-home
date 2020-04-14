@@ -3,6 +3,8 @@
 with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
+    black
+    
     #server
     aiohttp
     aiohttp-jinja2
@@ -33,7 +35,7 @@ in
     home.packages = with pkgs; [
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
-      aria2 imagemagick feh
+      aria2 imagemagick feh httpie
       # DEVELOPMENT
       idea.idea-ultimate vscodium (callPackage ./termius.nix { })
       python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
