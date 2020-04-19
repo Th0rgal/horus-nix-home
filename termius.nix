@@ -11,11 +11,11 @@
 
 stdenv.mkDerivation rec {
   pname = "termius";
-  version = "5.9.1";
+  version = "5.9.2";
 
   src = fetchurl {
     url = "https://www.termius.com/download/linux/Termius.deb";
-    sha256 = "1qj63gyd1hi954b7z2q621g0ymzli8pvncb19pmarg06pim5dlr6";
+    sha256 = "1g6wviidski7gvqlca9pg25aznlrn6vwdzq0ivdxs28dchslw1lj";
   };
 
   desktopItem = makeDesktopItem {
