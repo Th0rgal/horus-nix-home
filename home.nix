@@ -44,7 +44,7 @@ in
       # OFFICE
       texlive.combined.scheme-medium typora wpsoffice
       # DEFAULT
-      brave discord vlc spotify gimp blueman
+      brave discord vlc spotify gimp blueman tor-browser-bundle-bin protonvpn-cli
       # GAMES
       bastet multimc tigervnc
     ];
