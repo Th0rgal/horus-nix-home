@@ -42,7 +42,7 @@ in
       # BLOCKCHAIN
       (callPackage ./ledger-live.nix { })
       # OFFICE
-      texlive.combined.scheme-medium typora wpsoffice
+      texlive.combined.scheme-medium typora
       # DEFAULT
       brave discord vlc spotify gimp blueman tor-browser-bundle-bin
       # GAMES
