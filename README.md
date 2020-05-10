@@ -12,6 +12,6 @@ This is the home-manager configuration I'm using on my laptop which runs Nixos 2
 
 ```
 cd ~
-git pull https://github.com/Th0rgal/nix-home ./configs/nixpkgs
+git clone https://github.com/Th0rgal/nix-home ./configs/nixpkgs
 home-manager switch
 ```
