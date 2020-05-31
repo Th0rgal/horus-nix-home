@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://www.termius.com/download/linux/Termius.deb";
-    sha256 = "04zh0zzyp906lf6mz3xzxybn2a55rv3vvrj0m12gnrb8kjb3pk5s";
+    sha256 = "07g5qnigfkhfjy3h4a6yq66nyg68cq14kim6kcnkjk70spwajfm4";
   };
 
   desktopItem = makeDesktopItem {
