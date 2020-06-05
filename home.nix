@@ -42,9 +42,9 @@ in
       # BLOCKCHAIN
       ledger-live-desktop
       # OFFICE
-      texlive.combined.scheme-medium wpsoffice
+      texlive.combined.scheme-medium wpsoffice tor-browser-bundle-bin brave
       # DEFAULT
-      brave kotatogram-desktop discord vlc spotify gimp blueman tor-browser-bundle-bin
+      kotatogram-desktop discord vlc spotify gimp blueman wineWowPackages.stable
       # GAMES
       bastet multimc tigervnc
     ];
