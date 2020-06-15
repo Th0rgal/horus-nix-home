@@ -3,27 +3,17 @@
 with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
-    black
-    setuptools
-    wheel
+    #various
+    pip faker pywal black setuptools wheel twine
     #server
     aiohttp
-    aiohttp-jinja2
     #isn
-    pygame
-    pillow
+    pygame pillow
     #ntru
-    sympy
-    numpy
-    docopt
+    sympy numpy docopt
     #database
     psycopg2
     #others
-    pip
-    wheel
-    setuptools
-    faker
-    pywal
     (callPackage ./discordpy.nix { })
   ];
   python-with-my-packages = python3.withPackages my-python-packages;
