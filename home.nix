@@ -4,7 +4,8 @@ with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
     black
-    
+    setuptools
+    wheel
     #server
     aiohttp
     aiohttp-jinja2
