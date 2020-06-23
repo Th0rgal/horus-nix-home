@@ -13,8 +13,6 @@ let
     sympy numpy docopt
     #database
     psycopg2
-    #others
-    (callPackage ./discordpy.nix { })
   ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
@@ -28,12 +26,12 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
-      idea.idea-ultimate vscodium (callPackage ./termius.nix { })
+      (callPackage ./termius.nix { }) vscodium #idea.idea-ultimate 
       python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
       # BLOCKCHAIN
       ledger-live-desktop
       # OFFICE
-      texlive.combined.scheme-medium wpsoffice tor-browser-bundle-bin brave
+      texlive.combined.scheme-medium wpsoffice brave
       # DEFAULT
       kotatogram-desktop discord vlc spotify gimp blueman wineWowPackages.stable
       # GAMES
