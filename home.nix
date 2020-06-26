@@ -4,7 +4,7 @@ with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
     #various
-    pip faker pywal black setuptools wheel twine
+    pip faker pywal black setuptools wheel twine flake8
     #server
     aiohttp
     #isn
