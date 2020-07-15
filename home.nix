@@ -4,7 +4,7 @@ with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
     #various
-    pip faker pywal black setuptools wheel twine flake8
+    pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
     #server
     aiohttp
     #isn
@@ -26,7 +26,7 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
-      (callPackage ./termius.nix { }) vscodium #idea.idea-ultimate 
+      (callPackage ./termius.nix { }) vscodium idea.idea-ultimate 
       python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
       # BLOCKCHAIN
       ledger-live-desktop
