@@ -5,6 +5,8 @@ let
   my-python-packages = python-packages: with python-packages; [
     #various
     pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
+    # console
+    aioconsole
     #server
     aiohttp
     #isn
