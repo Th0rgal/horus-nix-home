@@ -36,7 +36,7 @@ in
       # OFFICE
       texlive.combined.scheme-medium wpsoffice typora brave
       # DEFAULT
-      kotatogram-desktop discord vlc spotify gimp blueman wineWowPackages.stable
+      kotatogram-desktop discord vlc spotify gimp blueman wineWowPackages.stable obs-studio
       # GAMES
       bastet multimc tigervnc
     ];
