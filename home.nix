@@ -29,7 +29,7 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
-      (callPackage ./termius.nix { }) vscodium idea.idea-ultimate 
+      (callPackage ./termius.nix { }) vscodium idea.idea-ultimate  postman
       python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
       # BLOCKCHAIN
       ledger-live-desktop
