@@ -2,11 +2,11 @@
 
 buildPythonPackage rec {
   pname = "binance.py";
-  version = "1.5.1";
+  version = "1.5.2";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "e202b082f57b963386dee085151f57170a1e7cd1754468713f7255fb6c51720a";
+    sha256 = "f08e93275dabe8d52998224bc9d504f18c6debd8f2ebf6d63a4ac720b9c71813";
   };
 
   propagatedBuildInputs = [aiohttp];
