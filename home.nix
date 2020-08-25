@@ -3,7 +3,7 @@
 with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
-    (callPackage ./binancepy.nix { })
+    (callPackage ./pylibs/binancepy.nix { }) (callPackage ./pylibs/bit.nix { })
     #various
     pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
     # console
