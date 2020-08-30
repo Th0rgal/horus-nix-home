@@ -25,6 +25,8 @@ in
 
     home.keyboard.layout = "fr";
     home.packages = with pkgs; [
+      # MISC
+      arandr
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
