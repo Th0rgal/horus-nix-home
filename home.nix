@@ -10,7 +10,7 @@ let
     aioconsole
     #server
     aiohttp
-    #isn
+    #cours
     pygame pillow
     #ntru
     sympy numpy docopt
@@ -26,13 +26,14 @@ in
     home.keyboard.layout = "fr";
     home.packages = with pkgs; [
       # MISC
-      arandr
+      arandr haskellPackages.network-manager-tui
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
       (callPackage ./termius.nix { }) vscodium idea.idea-ultimate  postman
       python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
+      gdb jedit sfml
       # BLOCKCHAIN
       ledger-live-desktop
       # OFFICE
