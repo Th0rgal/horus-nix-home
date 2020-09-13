@@ -2,22 +2,16 @@
 
 with pkgs;
 let
-  my-python-packages = python-packages: with python-packages; [
+  default-python = python3.withPackages (python-packages: with python-packages; [
     (callPackage ./pylibs/binancepy.nix { }) (callPackage ./pylibs/bit.nix { })
-    #various
+    # basics
     pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
-    # console
-    aioconsole
-    #server
-    aiohttp
-    #cours
+    # utils
+    aioconsole aiohttp
+    # school
     pygame pillow
-    #ntru
-    sympy numpy docopt
-    #database
-    psycopg2
-  ];
-  python-with-my-packages = python3.withPackages my-python-packages;
+  ]);
+
 in
   {
     imports = [ ./i3.nix ./polybar.nix ./rofi.nix ./alacritty.nix ./compton.nix ];
@@ -31,8 +25,8 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
-      (callPackage ./termius.nix { }) vscodium idea.idea-ultimate  postman
-      python-with-my-packages conda zulu8 gradle rustup gcc m4 gnumake binutils
+      (callPackage ./termius.nix { }) idea.idea-ultimate  postman
+      default-python conda zulu8 gradle rustup gcc m4 gnumake binutils
       gdb jedit sfml
       # BLOCKCHAIN
       ledger-live-desktop
