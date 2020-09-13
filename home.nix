@@ -41,7 +41,7 @@ in
       # BLOCKCHAIN
       ledger-live-desktop
       # OFFICE
-      texlive.combined.scheme-medium wpsoffice typora brave libreoffice-fresh
+      texlive.combined.scheme-medium wpsoffice typora brave libreoffice-fresh (callPackage ./todoist.nix { })
       # DEFAULT
       kotatogram-desktop discord vlc spotify gimp blueman wineWowPackages.stable obs-studio
       # GAMES
