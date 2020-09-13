@@ -18,6 +18,16 @@ in
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
+
+    # to keep discord up to date
+    nixpkgs.overlays = [
+      (self: super: {
+        discord = super.discord.overrideAttrs (_: {
+          src = builtins.fetchTarball https://discord.com/api/download?platform=linux&format=tar.gz;
+        });
+      })
+    ];
+
     home.packages = with pkgs; [
       # MISC
       arandr haskellPackages.network-manager-tui
