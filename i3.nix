@@ -31,6 +31,11 @@
       
       startup = [
         {
+          command = "exec i3-msg workspace 1";
+          always = true;
+          notification = false;
+        }
+        {
           command = "systemctl --user restart polybar.service";
           always = true;
           notification = false;
