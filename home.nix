@@ -37,7 +37,7 @@ in
       # DEVELOPMENT
       idea.idea-ultimate  postman
       default-python conda zulu8 gradle rustup gcc m4 gnumake binutils
-      gdb jedit sfml
+      gdb sfml
       # BLOCKCHAIN
       ledger-live-desktop
       # OFFICE
