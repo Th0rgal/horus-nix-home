@@ -40,12 +40,6 @@
           always = true;
           notification = false;
         }
-
-        {
-          command = "${pkgs.bash}/bin/bash ~/screens.sh"; # TODO: Check if exists
-          always = true;
-        }
-
         {
           command = "${pkgs.feh}/bin/feh --bg-scale ~/background.png"; # TODO: fetch background from URL
           always = true;
