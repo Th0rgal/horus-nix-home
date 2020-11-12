@@ -35,8 +35,8 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
-      idea.idea-ultimate  postman
-      default-python conda zulu8 gradle rustup gcc m4 gnumake binutils
+      idea.idea-ultimate postman
+      default-python conda adoptopenjdk-openj9-bin-8 gradle rustup gcc m4 gnumake binutils
       gdb sfml
       # BLOCKCHAIN
       ledger-live-desktop
