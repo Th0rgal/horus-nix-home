@@ -30,7 +30,7 @@ in
 
     home.packages = with pkgs; [
       # MISC
-      arandr haskellPackages.network-manager-tui barrier
+      arandr haskellPackages.network-manager-tui barrier xviewer
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
