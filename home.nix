@@ -37,7 +37,7 @@ in
       # DEVELOPMENT
       idea.idea-ultimate postman
       default-python conda adoptopenjdk-openj9-bin-8 gradle rustup gcc m4 gnumake binutils
-      gdb sfml
+      gdb sfml (callPackage ./termius.nix { })
       # BLOCKCHAIN
       ledger-live-desktop
       # OFFICE

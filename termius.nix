@@ -5,17 +5,18 @@
 , makeDesktopItem
 , makeWrapper
 , stdenv
+, lib
 , udev
 , wrapGAppsHook
 }:
 
 stdenv.mkDerivation rec {
   pname = "termius";
-  version = "5.9.2";
+  version = "7.1.0";
 
   src = fetchurl {
-    url = "https://www.termius.com/download/linux/Termius.deb";
-    sha256 = "1yhv38flfw76ji893xyrya5kncxqcplwmi0bc51ips1dkrnmdcki";
+    url = "https://deb.termius.com/pool/main/t/termius-app/termius-app_${version}_amd64.deb";
+    sha256 = "801579b931ca0ad5340085df8863042336e2b609dd1cd6771260c873f3d2bb73";
   };
 
   desktopItem = makeDesktopItem {
@@ -49,7 +50,7 @@ stdenv.mkDerivation rec {
     cp "${desktopItem}/share/applications/"* "$out/share/applications"
   '';
 
-  runtimeDependencies = [ udev.lib ];
+  runtimeDependencies = [ (lib.getLib udev) ];
 
   postFixup = ''
     makeWrapper $out/opt/Termius/termius-app $out/bin/termius-app \
@@ -61,7 +62,7 @@ stdenv.mkDerivation rec {
     homepage = "https://termius.com/";
     downloadPage = "https://termius.com/linux/";
     license = licenses.unfree;
-    maintainers = with maintainers; [ filalex77 ];
+    maintainers = with maintainers; [ Br1ght0ne th0rgal ];
     platforms = [ "x86_64-linux" ];
   };
 }
