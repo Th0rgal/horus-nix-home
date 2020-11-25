@@ -39,7 +39,7 @@ in
       default-python conda adoptopenjdk-openj9-bin-8 gradle rustup gcc m4 gnumake binutils
       gdb sfml (callPackage ./termius.nix { })
       # BLOCKCHAIN
-      ledger-live-desktop
+      (callPackage ./ledgerlive.nix { })
       # OFFICE
       texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh
       # DEFAULT
