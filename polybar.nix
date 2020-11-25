@@ -11,22 +11,23 @@ let
   fg = "#FFFFFF";
 
   # Colored
-  primary = "#ffb973";
+  primary = "#91ddff";
 
   # Dark
-  secondary = "#140e0a";
+  secondary = "#141228";
 
   # Colored (light)
-  tertiary = "#74c2d4";
+  tertiary = "#65b2ff";
 
   # white
   quaternary = "#ecf0f1";
 
   # middle gray
-  quinternary = "#384245";
+  quinternary = "#20203d";
 
   # Red
   urgency = "#e74c3c";
+
 in
   {
     services.polybar = { 
@@ -66,7 +67,7 @@ in
           font-0 = "FuraCode Nerd Font:size=12;3";
           font-1 = "FuraCode Nerd Font:style=Bold:size=12;3";
 
-          modules-left = "distro-icon dulP ddrT i3 dulT";
+          modules-left = "distro-icon dulS ddrT i3 dulT";
           modules-center = "title";
           modules-right = "durT audio ddlT date";
 
@@ -131,8 +132,8 @@ in
           interval = 999999999;
 
           format = " <label>";
-          format-background = primary;
-          format-foreground = secondary;
+          format-foreground = quaternary;
+          format-background = secondary;
           format-padding = 1;
           label = "%output%";
           label-font = 2;
