@@ -22,7 +22,6 @@
 
       shell = {
         program = "${pkgs.zsh}/bin/zsh";
-        args = ["-c" "echo; neofetch; echo; zsh"];
       };
 
       colors = {
