@@ -41,7 +41,7 @@
           notification = false;
         }
         {
-          command = "${pkgs.feh}/bin/feh --bg-scale ~/background.png"; # TODO: fetch background from URL
+          command = "${pkgs.feh}/bin/feh --bg-scale ~/background.jpg";
           always = true;
           notification = false;
         }

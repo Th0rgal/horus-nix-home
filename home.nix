@@ -26,6 +26,11 @@ in
           src = builtins.fetchTarball https://discord.com/api/download?platform=linux&format=tar.gz;
         });
       })
+      (self: super: {
+      neofetch = super.neofetch.overrideAttrs (oldAttrs: {
+          src = builtins.fetchTarball "https://github.com/dylanaraps/neofetch/archive/master.tar.gz";
+        });
+      })
     ];
 
     home.packages = with pkgs; [
