@@ -7,7 +7,7 @@ let
     # basics
     pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
     # utils
-    aioconsole aiohttp
+    aioconsole aiohttp matplotlib
     # school
     pygame pillow
   ]);
@@ -35,7 +35,7 @@ in
 
     home.packages = with pkgs; [
       # MISC
-      arandr haskellPackages.network-manager-tui barrier
+      arandr haskellPackages.network-manager-tui barrier ffmpeg-full
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
