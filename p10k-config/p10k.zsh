@@ -1574,3 +1574,17 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 zstyle ':completion:*' menu select
 # to make tab completions case insensitive
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey "^[[A"    up-line-or-beginning-search   # Up             : previous history entry matching until cursor
+bindkey "^[[B"    down-line-or-beginning-search # Down           : next history entry matching until cursor
+
+bindkey '^[[1;5C' beginning-of-line             # Home (fn+left) : move cursor to the beginning of the line
+bindkey '^[[1;5D' end-of-line                   # End (fn+right) : move cursor to the end of the line
+
+bindkey '^H'      backward-kill-word            # ctrl+backspace : delete previous word
+bindkey '^[[3;5~' kill-word                     # ctrl+del       : delete next word
