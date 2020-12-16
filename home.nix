@@ -48,7 +48,7 @@ in
       # OFFICE
       texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh
       # DEFAULT
-      kotatogram-desktop discord element-desktop vlc spotify gimp blueman winetricks wineWowPackages.stable obs-studio
+      kotatogram-desktop discord element-desktop vlc spotify gimp blueman lutris obs-studio
       # GAMES
       bastet multimc tigervnc
     ];
