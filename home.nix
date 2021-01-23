@@ -14,7 +14,7 @@ let
 
 in
   {
-    imports = [ ./i3.nix ./polybar.nix ./rofi.nix ./alacritty.nix ./compton.nix ];
+    imports = [ ./packages/configs/i3.nix ./packages/configs/polybar.nix ./packages/configs/rofi.nix ./packages/configs/alacritty.nix ./packages/configs/compton.nix ];
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
@@ -42,9 +42,9 @@ in
       # DEVELOPMENT
       idea.idea-ultimate postman
       default-python conda adoptopenjdk-openj9-bin-8 gradle rustup gcc m4 gnumake binutils
-      gdb sfml (callPackage ./termius.nix { }) traceroute
+      gdb sfml (callPackage ./packages/termius.nix { }) traceroute
       # BLOCKCHAIN
-      (callPackage ./ledgerlive.nix { })
+      (callPackage ./packages/ledgerlive.nix { })
       # OFFICE
       texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh
       # DEFAULT
@@ -73,7 +73,7 @@ in
           }
           {
             name = "powerlevel10k-config";
-            src = lib.cleanSource ./p10k-config;
+            src = lib.cleanSource ./packages/configs/p10k-config;
             file = "p10k.zsh";
           }
         ];

@@ -4,7 +4,7 @@
 { 
   services.picom = {
     enable = true;
-    package = pkgs.callPackage ./compton-unstable.nix { };
+    package = pkgs.callPackage ../compton-unstable.nix { };
     experimentalBackends = true;
     
     blur = true;
