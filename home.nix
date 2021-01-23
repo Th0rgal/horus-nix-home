@@ -14,7 +14,13 @@ let
 
 in
   {
-    imports = [ ./configs/i3.nix ./configs/polybar.nix ./configs/rofi.nix ./configs/alacritty.nix ./configs/compton.nix ];
+    imports = [
+        ./configs/i3.nix
+        ./configs/polybar.nix
+        ./configs/rofi.nix
+        ./configs/alacritty.nix
+        ./configs/compton.nix
+      ];
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
