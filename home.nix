@@ -14,7 +14,7 @@ let
 
 in
   {
-    imports = [ ./packages/configs/i3.nix ./packages/configs/polybar.nix ./packages/configs/rofi.nix ./packages/configs/alacritty.nix ./packages/configs/compton.nix ];
+    imports = [ ./configs/i3.nix ./configs/polybar.nix ./configs/rofi.nix ./configs/alacritty.nix ./configs/compton.nix ];
     nixpkgs.config.allowUnfree = true;
 
     home.keyboard.layout = "fr";
@@ -73,7 +73,7 @@ in
           }
           {
             name = "powerlevel10k-config";
-            src = lib.cleanSource ./packages/configs/p10k-config;
+            src = lib.cleanSource ./configs/p10k-config;
             file = "p10k.zsh";
           }
         ];
