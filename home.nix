@@ -1,79 +1,10 @@
 { config, pkgs, lib, ... }:
 
-with pkgs;
-let
-  default-python = python3.withPackages (python-packages: with python-packages; [
-    (callPackage ./pylibs/binancepy.nix { }) (callPackage ./pylibs/bit.nix { })
-    # basics
-    pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
-    # utils
-    aioconsole aiohttp matplotlib
-    # school
-    pygame pillow
-  ]);
-
-in
-  {
-    imports = [
-        ./configs/i3.nix
-        ./configs/polybar.nix
-        ./configs/rofi.nix
-        ./configs/alacritty.nix
-        ./configs/compton.nix
-      ];
-    nixpkgs.config.allowUnfree = true;
-
-    home.keyboard.layout = "fr";
-
-    # to keep discord up to date
-    nixpkgs.overlays = [ (import ./overlays/main.nix) ];
-
-    home.packages = with pkgs; [
-      # MISC
-      arandr haskellPackages.network-manager-tui barrier ffmpeg-full
-      # TERMINAL
-      gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
-      aria2 imagemagick feh httpie
-      # DEVELOPMENT
-      idea.idea-ultimate postman
-      default-python conda adoptopenjdk-openj9-bin-8 gradle rustup gcc m4 gnumake binutils
-      gdb sfml (callPackage ./packages/termius.nix { }) traceroute
-      # BLOCKCHAIN
-      (callPackage ./packages/ledgerlive.nix { })
-      # OFFICE
-      texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh
-      # DEFAULT
-      kotatogram-desktop discord element-desktop vlc spotify gimp blueman wineWowPackages.stable obs-studio
-      # GAMES
-      bastet multimc tigervnc
+{
+  imports = [
+      ./configs/main.nix
+      ./packages/main.nix
     ];
-
-    programs = {
-      home-manager.enable = true;
-      command-not-found.enable = true;
-      git = {
-        enable = true;
-        userName = "Thomas Marchand";
-        userEmail = "thomas.marchand" + "@" + "tuta.io";
-      };
-
-
-      zsh = {
-        enable = true;
-        plugins = [
-          {
-            name = "powerlevel10k";
-            src = pkgs.zsh-powerlevel10k;
-            file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-          }
-          {
-            name = "powerlevel10k-config";
-            src = lib.cleanSource ./configs/p10k-config;
-            file = "p10k.zsh";
-          }
-        ];
-      };
-    };
-
-    xsession.enable = true;
-  }
+  nixpkgs.overlays = [ (import ./overlays/main.nix) ];
+  home.keyboard.layout = "fr";
+}
