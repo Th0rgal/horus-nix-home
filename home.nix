@@ -26,18 +26,7 @@ in
     home.keyboard.layout = "fr";
 
     # to keep discord up to date
-    nixpkgs.overlays = [
-      (self: super: {
-        discord = super.discord.overrideAttrs (_: {
-          src = builtins.fetchTarball https://discord.com/api/download?platform=linux&format=tar.gz;
-        });
-      })
-      (self: super: {
-      neofetch = super.neofetch.overrideAttrs (oldAttrs: {
-          src = builtins.fetchTarball "https://github.com/dylanaraps/neofetch/archive/master.tar.gz";
-        });
-      })
-    ];
+    nixpkgs.overlays = [ (import ./overlays/main.nix) ];
 
     home.packages = with pkgs; [
       # MISC
