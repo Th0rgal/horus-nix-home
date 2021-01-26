@@ -1,6 +1,5 @@
 { config, pkgs, lib, ... }:
 
-
 {
   imports = [
       ./i3.nix
@@ -8,6 +7,7 @@
       ./rofi.nix
       ./alacritty.nix
       ./compton.nix
+      ./vscode.nix
   ];
 
   programs = {
