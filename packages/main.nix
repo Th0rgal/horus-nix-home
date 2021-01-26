@@ -22,7 +22,7 @@ in
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
-      idea.idea-ultimate postman
+      idea.idea-ultimate postman lean
       default-python conda adoptopenjdk-openj9-bin-8 gradle rustup gcc m4 gnumake binutils
       gdb sfml (callPackage ./termius.nix { }) traceroute
       # BLOCKCHAIN
