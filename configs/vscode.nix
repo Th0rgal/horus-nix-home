@@ -22,6 +22,12 @@
             version = "0.16.22";
             sha256 = "08fj7h6dw56s40l9fkn4xz1valxpwhc4n8vw7d44264cabcsmkrw";
         }
+        {
+            name = "rust";
+            publisher = "rust-lang";
+            version = "0.7.8";
+            sha256 = "039ns854v1k4jb9xqknrjkj8lf62nfcpfn0716ancmjc4f0xlzb3";
+        }
 
         # config support
         {
