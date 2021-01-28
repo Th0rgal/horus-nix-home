@@ -26,7 +26,7 @@ in
       default-python conda adoptopenjdk-openj9-bin-8 gradle gcc m4 gnumake binutils
       gdb sfml (callPackage ./termius.nix { }) traceroute
       # BLOCKCHAIN
-      (callPackage ./ledgerlive.nix { })
+      (callPackage ./ledgerlive.nix { }) go-ethereum
       # OFFICE
       texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh
       # DEFAULT
