@@ -84,7 +84,7 @@
             iconTheme = "eq-material-theme-icons-darker";
             colorTheme = "Material Theme Ocean High Contrast";
         };
-
+        rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
         latex-workshop.view.pdf.viewer = "tab";
         cmake.configureOnOpen = true;
     };
