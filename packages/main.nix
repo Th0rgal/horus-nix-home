@@ -24,7 +24,7 @@ in
       # DEVELOPMENT
       idea.idea-ultimate postman elan
       default-python conda adoptopenjdk-openj9-bin-8 gradle gcc m4 gnumake binutils
-      gdb sfml (callPackage ./termius.nix { }) rustup
+      gdb sfml (callPackage ./termius.nix { }) rustup hping
       # BLOCKCHAIN
       (callPackage ./ledgerlive.nix { }) go-ethereum
       # OFFICE
