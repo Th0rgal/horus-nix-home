@@ -86,7 +86,7 @@
         };
         rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
         latex-workshop.view.pdf.viewer = "tab";
-        cmake.configureOnOpen = true;
+        cmake.configureOnOpen = false;
     };
 
 

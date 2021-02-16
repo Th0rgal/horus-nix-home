@@ -17,14 +17,14 @@ in
   {
     home.packages = with pkgs; [
       # MISC
-      arandr haskellPackages.network-manager-tui barrier ffmpeg-full tmate
+      arandr haskellPackages.network-manager-tui barrier ffmpeg-full tmate hping ncat
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
       # DEVELOPMENT
       idea.idea-ultimate postman elan
       default-python conda adoptopenjdk-openj9-bin-8 gradle gcc m4 gnumake binutils
-      gdb sfml (callPackage ./termius.nix { }) rustup hping
+      gdb sfml (callPackage ./termius.nix { }) rustup
       # BLOCKCHAIN
       (callPackage ./ledgerlive.nix { }) go-ethereum
       # OFFICE
