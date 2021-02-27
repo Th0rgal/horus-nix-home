@@ -17,7 +17,7 @@ in
   {
     home.packages = with pkgs; [
       # MISC
-      cachix arandr haskellPackages.network-manager-tui barrier ffmpeg-full tmate hping ncat
+      cachix appimage-run arandr haskellPackages.network-manager-tui barrier ffmpeg-full tmate hping ncat
       # TERMINAL
       gotop htop neofetch cava zip unrar unzip xorg.xev escrotum tree gnupg
       aria2 imagemagick feh httpie
