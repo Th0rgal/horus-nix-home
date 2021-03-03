@@ -10,7 +10,7 @@ let
     # utils
     aioconsole aiohttp matplotlib
     # school
-    pygame pillow
+    pygame pillow cython
   ]);
 
 in
