@@ -22,6 +22,12 @@
             version = "0.7.8";
             sha256 = "039ns854v1k4jb9xqknrjkj8lf62nfcpfn0716ancmjc4f0xlzb3";
         }
+        {
+            name = "language-cython";
+            publisher = "guyskk";
+            version = "0.0.6";
+            sha256 = "02v0sp5finy8b07ny5fh8x7j8m3j2in5ffhcjvxkmwgf9cqas483";
+        }
 
         # config support
         {
