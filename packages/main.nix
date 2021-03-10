@@ -28,7 +28,7 @@ in
       # BLOCKCHAIN
       (callPackage ./ledgerlive.nix { }) go-ethereum
       # OFFICE
-      texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh
+      texlive.combined.scheme-medium wpsoffice typora zathura brave libreoffice-fresh pavucontrol
       # DEFAULT
       kotatogram-desktop discord element-desktop vlc spotify gimp blueman wineWowPackages.stable obs-studio
       # GAMES
