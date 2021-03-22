@@ -87,8 +87,11 @@
     ];
 
     userSettings = {
-      terminal.integrated.shell.linux = "${pkgs.zsh}/bin/zsh";
+      update.mode = "none";
       window.zoomLevel = 0;
+
+      terminal.integrated.shell.linux = "${pkgs.zsh}/bin/zsh";
+
       editor = {
         fontFamily =
           "'JetbrainsMono Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'";
@@ -99,7 +102,8 @@
         iconTheme = "eq-material-theme-icons-darker";
         colorTheme = "GitHub Dark"; # Material Theme Ocean High Contrast
       };
-      #jupyter.widgetScriptSources = [ "jsdelivr.com" "unpkg.com" ];
+
+      #jupyter.widgetScriptSources = [ "jsdelivr.com" "unpkg.com" ]; # required by qgrid
       rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
       latex-workshop.view.pdf.viewer = "tab";
       cmake.configureOnOpen = false;
