@@ -27,7 +27,7 @@ let
       pandas
       pytorch
       cython
-      (callPackage ./pylibs/qgrid.nix { })
+      #(callPackage ./pylibs/qgrid.nix { })
     ]);
 
 in {

@@ -99,6 +99,7 @@
         iconTheme = "eq-material-theme-icons-darker";
         colorTheme = "GitHub Dark"; # Material Theme Ocean High Contrast
       };
+      #jupyter.widgetScriptSources = [ "jsdelivr.com" "unpkg.com" ];
       rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
       latex-workshop.view.pdf.viewer = "tab";
       cmake.configureOnOpen = false;
