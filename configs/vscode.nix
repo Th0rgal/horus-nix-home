@@ -67,14 +67,8 @@
       {
         name = "vsc-material-theme-icons";
         publisher = "Equinusocio";
-        version = "1.2.2";
-        sha256 = "06xfv8ggli88zg1hyrd7m494fl6bz4fspbxy626nsswq4f26msms";
-      }
-      {
-        name = "vsc-material-theme";
-        publisher = "Equinusocio";
-        version = "33.1.2";
-        sha256 = "14db0xmhcrk0lxafcgiqqzi1ydhiy16hs4r9g0jcdglj8bn6y624";
+        version = "2.0.10";
+        sha256 = "0ki9x63wvc1h44cy5g9i96zkmcy1a3wc4sqzw3an17qad1lsicwb";
       }
       {
         name = "github-vscode-theme";

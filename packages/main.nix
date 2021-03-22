@@ -65,6 +65,7 @@ in {
     adoptopenjdk-openj9-bin-8
     gradle
     gcc
+    m4
     gnumake
     binutils
     gdb
