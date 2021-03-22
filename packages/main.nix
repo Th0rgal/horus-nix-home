@@ -8,9 +8,9 @@ let
     # basics
     pip faker pywal black setuptools wheel twine flake8 virtualenv pudb
     # utils
-    aioconsole aiohttp matplotlib pandas pyjwt pywebpush
+    aioconsole aiohttp matplotlib pyjwt
     # school
-    pygame pillow cython
+    ipykernel pandas pytorch cython (callPackage ./pylibs/qgrid.nix { })
   ]);
 
 in
