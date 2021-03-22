@@ -104,6 +104,7 @@
       };
 
       #jupyter.widgetScriptSources = [ "jsdelivr.com" "unpkg.com" ]; # required by qgrid
+      jupyter.alwaysTrustNotebooks = true;
       rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
       latex-workshop.view.pdf.viewer = "tab";
       cmake.configureOnOpen = false;
