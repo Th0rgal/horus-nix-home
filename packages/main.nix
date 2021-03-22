@@ -37,12 +37,8 @@ in {
     appimage-run
     arandr
     haskellPackages.network-manager-tui
-    barrier
-    ffmpeg-full
     tmate
-    hping
-    ncat
-    flashplayer-standalone
+
     # TERMINAL
     gotop
     htop
@@ -69,21 +65,16 @@ in {
     adoptopenjdk-openj9-bin-8
     gradle
     gcc
-    m4
     gnumake
     binutils
     gdb
-    sfml
     (callPackage ./termius.nix { })
     rustup
     # BLOCKCHAIN
     (callPackage ./ledgerlive.nix { })
-    go-ethereum
     # OFFICE
     texlive.combined.scheme-medium
     wpsoffice
-    typora
-    zathura
     brave
     libreoffice-fresh
     pavucontrol
@@ -93,7 +84,6 @@ in {
     element-desktop
     vlc
     spotify
-    gimp
     blueman
     wineWowPackages.stable
     obs-studio
@@ -101,6 +91,7 @@ in {
     bastet
     multimc
     tigervnc
+    flashplayer-standalone
   ];
 
 }
