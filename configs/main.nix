@@ -2,12 +2,12 @@
 
 {
   imports = [
-      ./i3.nix
-      ./polybar.nix
-      ./rofi.nix
-      ./alacritty.nix
-      ./compton.nix
-      ./vscode.nix
+    ./i3.nix
+    ./polybar.nix
+    ./rofi.nix
+    ./alacritty.nix
+    ./compton.nix
+    ./vscode.nix
   ];
 
   programs = {
@@ -18,7 +18,6 @@
       userName = "Thomas Marchand";
       userEmail = "thomas.marchand" + "@" + "tuta.io";
     };
-
 
     zsh = {
       enable = true;

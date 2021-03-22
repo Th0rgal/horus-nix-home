@@ -3,13 +3,13 @@
 {
   programs.rofi = {
     enable = true;
-    
+
     theme = builtins.toString (pkgs.writeText "rofi-theme" ''
       /**
       * Copyright: deadguy
       * (edited by Litarvan)
       */
-    
+
       configuration {
         display-drun:    "Activate";
         display-run:     "Execute";

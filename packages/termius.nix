@@ -1,21 +1,13 @@
-{ atomEnv
-, autoPatchelfHook
-, dpkg
-, fetchurl
-, makeDesktopItem
-, makeWrapper
-, stdenv
-, lib
-, udev
-, wrapGAppsHook
-}:
+{ atomEnv, autoPatchelfHook, dpkg, fetchurl, makeDesktopItem, makeWrapper
+, stdenv, lib, udev, wrapGAppsHook }:
 
 stdenv.mkDerivation rec {
   pname = "termius";
   version = "7.5.4";
 
   src = fetchurl {
-    url = "https://deb.termius.com/pool/main/t/termius-app/termius-app_${version}_amd64.deb";
+    url =
+      "https://deb.termius.com/pool/main/t/termius-app/termius-app_${version}_amd64.deb";
     sha256 = "0bgyb557kdxcjid4kji92m2pcviyhlxvfj3xcw8c11zlc1wibqjn";
   };
 

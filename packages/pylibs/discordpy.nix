@@ -1,12 +1,5 @@
-{ lib
-, fetchFromGitHub
-, buildPythonPackage
-, pythonOlder
-, withVoice ? true, libopus
-, aiohttp
-, websockets
-, pynacl
-}:
+{ lib, fetchFromGitHub, buildPythonPackage, pythonOlder, withVoice ? true
+, libopus, aiohttp, websockets, pynacl }:
 
 buildPythonPackage rec {
   pname = "discord.py";
@@ -31,7 +24,6 @@ buildPythonPackage rec {
       --replace "ctypes.util.find_library('opus')" "'${libopus}/lib/libopus.so.0'"
   '';
 
-
   # only have integration tests with discord
   doCheck = false;
 
@@ -48,8 +40,8 @@ buildPythonPackage rec {
 
   meta = {
     description = "A python wrapper for the Discord API";
-    homepage    = "https://discordpy.rtfd.org/";
-    license     = lib.licenses.mit;
+    homepage = "https://discordpy.rtfd.org/";
+    license = lib.licenses.mit;
   };
 }
 

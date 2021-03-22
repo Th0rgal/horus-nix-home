@@ -6,13 +6,12 @@ let
   name = "${pname}-${version}";
 
   src = fetchurl {
-    url = "https://github.com/LedgerHQ/${pname}/releases/download/v${version}/${pname}-${version}-linux-x86_64.AppImage";
+    url =
+      "https://github.com/LedgerHQ/${pname}/releases/download/v${version}/${pname}-${version}-linux-x86_64.AppImage";
     sha256 = "11r6gwzg5qym7h40d8mrpw8c6zbdi534c2y7ghy2k0a4k3ybk8x1";
   };
 
-  appimageContents = appimageTools.extractType2 {
-    inherit name src;
-  };
+  appimageContents = appimageTools.extractType2 { inherit name src; };
 in appimageTools.wrapType2 rec {
   inherit name src;
 
@@ -30,7 +29,12 @@ in appimageTools.wrapType2 rec {
     description = "Wallet app for Ledger Nano S and Ledger Blue";
     homepage = "https://www.ledger.com/live";
     license = licenses.mit;
-    maintainers = with maintainers; [ thedavidmeister nyanloutre RaghavSood th0rgal ];
+    maintainers = with maintainers; [
+      thedavidmeister
+      nyanloutre
+      RaghavSood
+      th0rgal
+    ];
     platforms = [ "x86_64-linux" ];
   };
 }

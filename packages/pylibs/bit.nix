@@ -1,4 +1,5 @@
-{ lib, buildPythonPackage, callPackage, fetchPypi, requests, coincurve ? (callPackage ./coincurve.nix { }) }:
+{ lib, buildPythonPackage, callPackage, fetchPypi, requests
+, coincurve ? (callPackage ./coincurve.nix { }) }:
 
 buildPythonPackage rec {
   pname = "bit";
