@@ -103,6 +103,7 @@
       rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
       latex-workshop.view.pdf.viewer = "tab";
       cmake.configureOnOpen = false;
+      python.formatting.provider = "black";
     };
   };
 }
