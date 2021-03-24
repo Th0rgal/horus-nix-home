@@ -35,6 +35,7 @@ in {
     # MISC
     cachix
     appimage-run
+    appimagekit
     arandr
     haskellPackages.network-manager-tui
     tmate
@@ -72,6 +73,7 @@ in {
     (callPackage ./termius.nix { })
     rustup
     # BLOCKCHAIN
+    (callPackage ./crypto-org-wallet.nix { })
     (callPackage ./ledgerlive.nix { })
     # OFFICE
     texlive.combined.scheme-medium
