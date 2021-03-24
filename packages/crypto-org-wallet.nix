@@ -25,8 +25,8 @@ in appimageTools.wrapType2 rec {
   '';
 
   meta = with lib; {
-    description = "Wallet app for Crypto.org";
-    homepage = "https://crypto.org/";
+    description = "Crypto.org Chain desktop wallet (Beta)";
+    homepage = "https://github.com/crypto-com/chain-desktop-wallet";
     license = licenses.asl20;
     maintainers = with maintainers; [ th0rgal ];
     platforms = [ "x86_64-linux" ];
