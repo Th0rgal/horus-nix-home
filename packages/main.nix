@@ -25,6 +25,8 @@ let
       # school
       ipykernel
       pandas
+      seaborn
+      sklearn-deap
       pytorch
       cython
       #(callPackage ./pylibs/qgrid.nix { })
