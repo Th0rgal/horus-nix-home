@@ -3,12 +3,12 @@
 
 stdenv.mkDerivation rec {
   pname = "termius";
-  version = "7.6.0";
+  version = "7.7.1";
 
   src = fetchurl {
     url =
       "https://deb.termius.com/pool/main/t/termius-app/termius-app_${version}_amd64.deb";
-      sha256 = "0a6bbkyrlav16vp93chbv20jwv6690mmrfy4c9zc722pb8xpa4xp";
+    sha256 = "67032f61f511bf0546c8b881961d08c425fb664c08ee2a6023d98596ea35ce0c";
   };
 
   desktopItem = makeDesktopItem {
