@@ -11,6 +11,7 @@ let
       faker
       pywal
       black
+      flake8
       setuptools
       wheel
       twine
