@@ -77,6 +77,7 @@ in {
     gdb
     (callPackage ./termius.nix { })
     rustup
+    ffmpeg # librosa
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
     (callPackage ./ledgerlive.nix { })
