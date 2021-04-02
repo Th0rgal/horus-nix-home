@@ -24,10 +24,12 @@ let
       matplotlib
       pyjwt
       # school
+      librosa
       ipykernel
       pandas
       seaborn
       sklearn-deap
+      jinja2
       #pytorch
       cython
       #(callPackage ./pylibs/qgrid.nix { })
