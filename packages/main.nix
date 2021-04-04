@@ -24,6 +24,7 @@ let
       matplotlib
       pyjwt
       # school
+      ipython
       librosa
       ipykernel
       pandas
