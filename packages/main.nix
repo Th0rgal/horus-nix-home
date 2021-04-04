@@ -62,6 +62,7 @@ in {
     imagemagick
     feh
     httpie
+
     # DEVELOPMENT
     idea.idea-ultimate
     postman
@@ -79,15 +80,18 @@ in {
     (callPackage ./termius.nix { })
     rustup
     ffmpeg # librosa
+
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
     (callPackage ./ledgerlive.nix { })
+
     # OFFICE
     texlive.combined.scheme-medium
     wpsoffice
     brave
     libreoffice-fresh
     pavucontrol
+
     # DEFAULT
     kotatogram-desktop
     discord
@@ -97,6 +101,7 @@ in {
     blueman
     wineWowPackages.stable
     obs-studio
+
     # GAMES
     bastet
     multimc
