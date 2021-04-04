@@ -38,6 +38,24 @@
           version = "0.0.6";
           sha256 = "02v0sp5finy8b07ny5fh8x7j8m3j2in5ffhcjvxkmwgf9cqas483";
         }
+        {
+          name = "formate";
+          publisher = "mikebovenlander";
+          version = "1.1.6";
+          sha256 = "0vzp9x5p9fmgrvrhmm4a6x9b3fgrmy22zwy972wx1p3k748g8ylc";
+        }
+        {
+          name = "formate";
+          publisher = "mikebovenlander";
+          version = "1.1.6";
+          sha256 = "0vzp9x5p9fmgrvrhmm4a6x9b3fgrmy22zwy972wx1p3k748g8ylc";
+        }
+        {
+          name = "lean";
+          publisher = "jroesch";
+          version = "0.16.25";
+          sha256 = "0qyx4qyvsbcqr2ddj7faa19dwn7hpl37ccqc7zijc2ad3hgvqqd7";
+        }
 
         # config support
         {
