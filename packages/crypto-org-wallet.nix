@@ -2,12 +2,12 @@
 
 let
   pname = "chain-desktop-wallet";
-  version = "0.1.4";
+  version = "0.2.0";
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "https://github.com/crypto-com/${pname}/releases/download/v${version}/${name}-x86_64.AppImage";
-    sha256 = "1agb3b0j0w7vqqqw6xp0c6j8wwkjmq6jfs2lndbnav0k4mlfd2vc";
+    sha256 = "07794ivwzfr4c8mm93m9q8421mxx624nbklwcpczs5sx4hl85klb";
   };
 
   appimageContents = appimageTools.extractType2 { inherit name src; };

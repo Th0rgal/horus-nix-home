@@ -84,6 +84,7 @@ in {
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
     (callPackage ./ledgerlive.nix { })
+    monero-gui
 
     # OFFICE
     texlive.combined.scheme-medium
