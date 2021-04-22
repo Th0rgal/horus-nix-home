@@ -88,6 +88,7 @@ in {
 
     # OFFICE
     texlive.combined.scheme-medium
+    typora
     wpsoffice
     brave
     libreoffice-fresh
