@@ -16,7 +16,11 @@
     git = {
       enable = true;
       userName = "Thomas Marchand";
-      userEmail = "thomas.marchand" + "@" + "tuta.io";
+      userEmail = "me" + "@" + "thomas-marchand.com";
+      signing = {
+        key = "937F956B9008A22F";
+        signByDefault = true;
+      };
     };
 
     zsh = {
