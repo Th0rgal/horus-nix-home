@@ -47,6 +47,7 @@ in {
     tmate
 
     # TERMINAL
+    any-nix-shell
     gotop
     htop
     neofetch
