@@ -78,9 +78,12 @@ in {
     gnumake
     binutils
     gdb
-    (callPackage ./termius.nix { })
     rustup
     ffmpeg # librosa
+
+    # SYSADMIN
+    tigervnc
+    (callPackage ./termius.nix { })
 
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
@@ -106,9 +109,7 @@ in {
     obs-studio
 
     # GAMES
-    bastet
     multimc
-    tigervnc
     flashplayer-standalone
   ];
 
