@@ -4,12 +4,7 @@ with pkgs;
 let
   default-python = python3.withPackages (python-packages:
     with python-packages; [
-      (callPackage ./pylibs/binancepy.nix { })
-      (callPackage ./pylibs/bit.nix { })
-      # basics
       pip
-      faker
-      pywal
       black
       flake8
       setuptools
@@ -17,23 +12,6 @@ let
       twine
       flake8
       virtualenv
-      pudb
-      # utils
-      aioconsole
-      aiohttp
-      matplotlib
-      pyjwt
-      # school
-      ipython
-      librosa
-      ipykernel
-      pandas
-      seaborn
-      sklearn-deap
-      jinja2
-      #pytorch
-      cython
-      #(callPackage ./pylibs/qgrid.nix { })
     ]);
 
 in {
