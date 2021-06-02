@@ -7,7 +7,7 @@
     theme = builtins.toString (pkgs.writeText "rofi-theme" ''
       /**
       * Copyright: deadguy
-      * (edited by Litarvan)
+      * (edited by Litarvan and Th0rgal)
       */
 
       configuration {
@@ -16,7 +16,7 @@
         display-window:  "Window";
         show-icons:      true;
         sidebar-mode:    true;
-        font: "Roboto 11";
+        font: "JetbrainsMono Nerd Font 12";
       }
 
       * {
@@ -52,11 +52,11 @@
 
       window {
         transparency: "real";
-        background-color: #000000AA;
+        background-color: #00000099;
         location:  north west;
         anchor:    north west;
         height:    50%;
-        width:    18%;
+        width:    20%;
         orientation:  horizontal;
         children:  [mainbox];
         x-offset:  29px;        
