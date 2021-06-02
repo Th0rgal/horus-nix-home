@@ -2,12 +2,13 @@
 
 {
   imports = [
-    ./i3.nix
-    ./polybar.nix
-    ./rofi.nix
     ./alacritty.nix
     ./compton.nix
-    ./vscode.nix
+    ./i3.nix
+    ./polybar.nix
+    ./redshift.nix
+    ./rofi.nix
+    ./vscode.nixgit
   ];
 
   programs = {
