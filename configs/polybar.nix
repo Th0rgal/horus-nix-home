@@ -7,7 +7,7 @@ let
   ac = "#1E88E5";
   mf = "#383838";
 
-  bg = "${"xrdb:background"}";
+  bg = "#00000000";
   fg = "#FFFFFF";
 
   # Colored

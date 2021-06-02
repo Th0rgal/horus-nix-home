@@ -88,7 +88,6 @@ in {
 
     # GAMES
     multimc
-    flashplayer-standalone
   ];
 
 }
