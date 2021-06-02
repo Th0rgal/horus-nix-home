@@ -33,19 +33,15 @@ in {
     zip
     unrar
     unzip
-    xorg.xev
     escrotum
     tree
     gnupg
     aria2
     imagemagick
     feh
-    httpie
 
     # DEVELOPMENT
     idea.idea-ultimate
-    postman
-    elan
     nixfmt
     default-python
     conda
@@ -57,7 +53,6 @@ in {
     binutils
     gdb
     rustup
-    ffmpeg # librosa
 
     # SYSADMIN
     tigervnc
@@ -72,11 +67,12 @@ in {
     texlive.combined.scheme-medium
     typora
     wpsoffice
-    brave
+    todoist-electron
     libreoffice-fresh
-    pavucontrol
+    brave
 
     # DEFAULT
+    pavucontrol
     kotatogram-desktop
     discord
     element-desktop
