@@ -8,7 +8,7 @@
     ./polybar.nix
     ./redshift.nix
     ./rofi.nix
-    ./vscode.nixgit
+    ./vscode.nix
   ];
 
   programs = {
