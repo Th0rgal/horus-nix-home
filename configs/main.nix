@@ -26,7 +26,10 @@
 
     zsh = {
       enable = true;
-      initExtraFirst = "export FAST_WORK_DIR=$HOME/.zsh/fsh/";
+      initExtraFirst = ''
+        [ ! -d "$HOME/.zsh/fsh/" ] && mkdir $HOME/.zsh/fsh/
+        export FAST_WORK_DIR=$HOME/.zsh/fsh/;
+      '';
       plugins = [
         {
           name = "zsh-autosuggestions";
