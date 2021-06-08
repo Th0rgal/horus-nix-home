@@ -26,7 +26,7 @@
 
     zsh = {
       enable = true;
-      initExtra = "export FAST_WORK_DIR=$HOME/.zsh/fsh/";
+      initExtraFirst = "export FAST_WORK_DIR=$HOME/.zsh/fsh/";
       plugins = [
         {
           name = "zsh-autosuggestions";
