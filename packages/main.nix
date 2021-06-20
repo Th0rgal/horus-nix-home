@@ -45,7 +45,7 @@ in {
     nixfmt
     default-python
     conda
-    adoptopenjdk-openj9-bin-8
+    adoptopenjdk-hotspot-bin-16
     gradle
     gcc
     m4
