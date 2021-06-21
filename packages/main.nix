@@ -83,7 +83,7 @@ in {
     obs-studio
 
     # GAMES
-    multimc
+    minecraft
   ];
 
 }
