@@ -57,6 +57,7 @@ in {
     # SYSADMIN
     tigervnc
     (callPackage ./termius.nix { })
+    remmina
 
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
