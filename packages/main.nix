@@ -69,6 +69,7 @@ in {
     wpsoffice
     todoist-electron
     libreoffice-fresh
+    aseprite-unfree
     brave
 
     # DEFAULT
