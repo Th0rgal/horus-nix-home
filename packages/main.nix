@@ -55,8 +55,7 @@ in {
     rustup
 
     # SYSADMIN
-    tigervnc
-    (callPackage ./termius.nix { })
+    #(callPackage ./termius.nix { })
     remmina
 
     # BLOCKCHAIN
