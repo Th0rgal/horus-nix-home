@@ -56,6 +56,18 @@
           version = "0.16.25";
           sha256 = "0qyx4qyvsbcqr2ddj7faa19dwn7hpl37ccqc7zijc2ad3hgvqqd7";
         }
+        {
+          name = "ocamlformat-vscode-extension";
+          publisher = "hoddy3190";
+          version = "0.0.2";
+          sha256 = "0gqjiccw9i0xfz2lj8vwxbr8zy1s69fyckyhpvlhnxfn5dacrsd4";
+        }
+        {
+          name = "reasonml";
+          publisher = "freebroccolo";
+          version = "1.0.38";
+          sha256 = "1nay6qs9vcxd85ra4bv93gg3aqg3r2wmcnqmcsy9n8pg1ds1vngd";
+        }
 
         # config support
         {
@@ -123,12 +135,20 @@
         colorTheme = "GitHub Dark"; # Material Theme Ocean High Contrast
       };
 
+      ocamlformat-vscode-extension = {
+        customOcamlformatPath = "ocamlformat";
+        ocamlformatOption = "--enable-outside-detected-project";
+      };
+
       #jupyter.widgetScriptSources = [ "jsdelivr.com" "unpkg.com" ]; # required by qgrid
       jupyter.alwaysTrustNotebooks = true;
       rust-client.rustupPath = "${pkgs.rustup}/bin/rustup";
       latex-workshop.view.pdf.viewer = "tab";
       cmake.configureOnOpen = false;
       python.formatting.provider = "black";
+      "[ocaml]" = {
+        editor.defaultFormatter = "hoddy3190.ocamlformat-vscode-extension";
+      };
     };
   };
 }

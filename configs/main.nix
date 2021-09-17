@@ -29,6 +29,7 @@
       initExtraFirst = ''
         [ ! -d "$HOME/.zsh/fsh/" ] && mkdir $HOME/.zsh/fsh/
         export FAST_WORK_DIR=$HOME/.zsh/fsh/;
+        export PATH=$PATH:~/tools
       '';
       plugins = [
         {
