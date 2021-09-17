@@ -74,6 +74,7 @@ in {
 
     # DEFAULT
     pavucontrol
+    (callPackage ./sigma-file-explorer.nix { })
     kotatogram-desktop
     discord
     element-desktop
