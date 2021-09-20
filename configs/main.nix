@@ -30,6 +30,7 @@
         [ ! -d "$HOME/.zsh/fsh/" ] && mkdir $HOME/.zsh/fsh/
         export FAST_WORK_DIR=$HOME/.zsh/fsh/;
         export PATH=$PATH:~/tools
+        export PATH=$PATH:~/.npm-global/bin
       '';
       plugins = [
         {

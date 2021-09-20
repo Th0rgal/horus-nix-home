@@ -7,6 +7,7 @@
 
     extensions = (with pkgs.vscode-extensions; [
       bbenoist.Nix
+      nixfmt-vscode
       ms-python.python
       ms-vscode.cpptools
     ]) ++ (let unstable = import <nixos-unstable> { };
@@ -14,12 +15,7 @@
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
 
         # Languages support
-        {
-          name = "nixfmt-vscode";
-          publisher = "brettm12345";
-          version = "0.0.1";
-          sha256 = "07w35c69vk1l6vipnq3qfack36qcszqxn8j3v332bl0w6m02aa7k";
-        }
+
         {
           name = "cmake-tools";
           publisher = "ms-vscode";
@@ -43,18 +39,6 @@
           publisher = "mikebovenlander";
           version = "1.1.6";
           sha256 = "0vzp9x5p9fmgrvrhmm4a6x9b3fgrmy22zwy972wx1p3k748g8ylc";
-        }
-        {
-          name = "formate";
-          publisher = "mikebovenlander";
-          version = "1.1.6";
-          sha256 = "0vzp9x5p9fmgrvrhmm4a6x9b3fgrmy22zwy972wx1p3k748g8ylc";
-        }
-        {
-          name = "lean";
-          publisher = "jroesch";
-          version = "0.16.25";
-          sha256 = "0qyx4qyvsbcqr2ddj7faa19dwn7hpl37ccqc7zijc2ad3hgvqqd7";
         }
         {
           name = "ocamlformat-vscode-extension";
@@ -149,6 +133,7 @@
       "[ocaml]" = {
         editor.defaultFormatter = "hoddy3190.ocamlformat-vscode-extension";
       };
+      window.menuBarVisibility = "toggle";
     };
   };
 }
