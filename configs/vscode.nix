@@ -7,7 +7,7 @@
 
     extensions = (with pkgs.vscode-extensions; [
       bbenoist.Nix
-      nixfmt-vscode
+      brettm12345.nixfmt-vscode
       ms-python.python
       ms-vscode.cpptools
     ]) ++ (let unstable = import <nixos-unstable> { };
@@ -15,7 +15,12 @@
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
 
         # Languages support
-
+        {
+          name = "solidity";
+          publisher = "juanblanco";
+          version = "0.0.125";
+          sha256 = "1kq79hgm0v5ivc7plkxh7riinij3vvw68xy5wl2yi2z2n98nylx2";
+        }
         {
           name = "cmake-tools";
           publisher = "ms-vscode";
