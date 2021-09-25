@@ -10,7 +10,7 @@
     };
     temperature = {
       day = 5500;
-      night = 1500;
+      night = 3000;
     };
     latitude = "85.0";
     longitude = "2.35";
