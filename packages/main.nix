@@ -77,8 +77,8 @@ in {
     pavucontrol
     (callPackage ./sigma-file-explorer.nix { })
     kotatogram-desktop
+    signal-desktop
     discord
-    element-desktop
     vlc
     spotify
     blueman
