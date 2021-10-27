@@ -86,10 +86,10 @@
 
         # Theme
         {
-          name = "vsc-material-theme-icons";
-          publisher = "Equinusocio";
-          version = "2.0.10";
-          sha256 = "0ki9x63wvc1h44cy5g9i96zkmcy1a3wc4sqzw3an17qad1lsicwb";
+          name = "material-icon-theme";
+          publisher = "PKief";
+          version = "4.10.0";
+          sha256 = "119zpdx2hx9d1xb3d9d773b88i2awr62ivmmnhxm9zp77x9y6b70";
         }
         {
           name = "github-vscode-theme";
@@ -120,7 +120,7 @@
       };
 
       workbench = {
-        iconTheme = "eq-material-theme-icons-darker";
+        iconTheme = "material-icon-theme";
         colorTheme = "GitHub Dark"; # Material Theme Ocean High Contrast
       };
 
