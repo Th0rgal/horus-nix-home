@@ -60,7 +60,7 @@ in {
 
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
-    (callPackage ./ledgerlive.nix { })
+    ledger-live-desktop #(callPackage ./ledgerlive.nix { })
     (callPackage ./ganache.nix { })
     monero-gui
 
