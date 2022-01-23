@@ -6,7 +6,6 @@
     package = pkgs.vscode;
 
     extensions = (with pkgs.vscode-extensions; [
-      bbenoist.Nix
       brettm12345.nixfmt-vscode
       ms-python.python
       ms-vscode.cpptools
@@ -132,7 +131,8 @@
 
       ocamlformat-vscode-extension = {
         customOcamlformatPath = "ocamlformat";
-        ocamlformatOption = "--enable-outside-detected-project";
+        ocamlformatOption =
+          "--enable-outside-detected-project,--break-cases=fit-or-vertical,--cases-exp-indent=4,--if-then-else=k-r,--type-decl-indent=4";
       };
 
       #jupyter.widgetScriptSources = [ "jsdelivr.com" "unpkg.com" ]; # required by qgrid

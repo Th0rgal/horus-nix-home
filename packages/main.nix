@@ -60,30 +60,25 @@ in {
 
     # BLOCKCHAIN
     (callPackage ./crypto-org-wallet.nix { })
-    ledger-live-desktop #(callPackage ./ledgerlive.nix { })
-    (callPackage ./ganache.nix { })
+    ledger-live-desktop # (callPackage ./ledgerlive.nix { })
+    #(callPackage ./ganache.nix { })
     monero-gui
 
     # OFFICE
     texlive.combined.scheme-medium
-    typora
-    wpsoffice
     todoist-electron
-    libreoffice-fresh
     aseprite-unfree
     brave
 
     # DEFAULT
     pavucontrol
-    (callPackage ./sigma-file-explorer.nix { })
     kotatogram-desktop
     signal-desktop
     discord
     vlc
-    spotify
+    #spotify
     blueman
     wineWowPackages.stable
-    obs-studio
 
     # GAMES
     minecraft
