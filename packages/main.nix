@@ -17,7 +17,6 @@ let
 in {
   home.packages = with pkgs; [
     # MISC
-    cachix
     appimage-run
     appimagekit
     arandr
@@ -26,10 +25,7 @@ in {
 
     # TERMINAL
     any-nix-shell
-    gotop
-    htop
     neofetch
-    cava
     zip
     unrar
     unzip
@@ -67,7 +63,6 @@ in {
     # OFFICE
     texlive.combined.scheme-medium
     todoist-electron
-    aseprite-unfree
     brave
 
     # DEFAULT
