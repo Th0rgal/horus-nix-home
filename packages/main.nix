@@ -51,7 +51,7 @@ in {
     rustup
 
     # SYSADMIN
-    #(callPackage ./termius.nix { })
+    termius
     remmina
 
     # BLOCKCHAIN
