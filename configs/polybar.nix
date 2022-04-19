@@ -269,6 +269,7 @@ in {
       "module/title" = {
         type = "internal/xwindow";
         format = "<label>";
+        format-foreground = secondary;
         label = "%title%";
         label-maxlen = 70;
       };
