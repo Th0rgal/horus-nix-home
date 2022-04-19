@@ -43,9 +43,9 @@
       latex-workshop.view.pdf.viewer = "tab";
       cmake.configureOnOpen = false;
       python.formatting.provider = "black";
-      "[ocaml]" = {
-        editor.defaultFormatter = "hoddy3190.ocamlformat-vscode-extension";
-      };
+      #"[ocaml]" = {
+      #  editor.defaultFormatter = "hoddy3190.ocamlformat-vscode-extension";
+      #};
       window.menuBarVisibility = "toggle";
     };
   };
