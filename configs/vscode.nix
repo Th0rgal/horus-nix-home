@@ -22,6 +22,7 @@
         fontFamily =
           "'JetbrainsMono Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'";
         fontLigatures = true;
+        inlineSuggest.enabled = true;
       };
 
       workbench = {
