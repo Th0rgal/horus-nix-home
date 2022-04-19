@@ -23,6 +23,7 @@
           "'JetbrainsMono Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'";
         fontLigatures = true;
         inlineSuggest.enabled = true;
+        bracketPairColorization.enabled = true;
       };
 
       workbench = {
