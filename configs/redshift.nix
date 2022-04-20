@@ -10,9 +10,9 @@
     };
     temperature = {
       day = 5500;
-      night = 4000;
+      night = 3000;
     };
-    latitude = "85.0";
-    longitude = "2.35";
+    latitude = "48.864716";
+    longitude = "2.349014";
   };
 }
