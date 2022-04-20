@@ -48,6 +48,15 @@
       #};
       "[css]" = { editor.defaultFormatter = "MikeBovenlander.formate"; };
       window.menuBarVisibility = "toggle";
+      files.exclude = {
+        "**/.git" = true;
+        "**/.svn" = true;
+        "**/.hg" = true;
+        "**/CVS" = true;
+        "**/.DS_Store" = true;
+        "**/Thumbs.db" = true;
+        "**/*.olean" = true;
+      };
     };
   };
 }
