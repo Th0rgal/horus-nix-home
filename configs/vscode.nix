@@ -46,6 +46,7 @@
       #"[ocaml]" = {
       #  editor.defaultFormatter = "hoddy3190.ocamlformat-vscode-extension";
       #};
+      "[css]" = { editor.defaultFormatter = "MikeBovenlander.formate"; };
       window.menuBarVisibility = "toggle";
     };
   };
